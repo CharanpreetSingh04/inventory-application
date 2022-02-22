@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Item</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body style="background-color:rgb(158, 253, 190)">
+    <div style="display: flex;background-color:rgb(27, 98, 230);margin-top:0%;padding-top: 1%;padding-bottom:1%;">
+        <div style="flex: 2;"><h1 style="color: white;">New Item</h1></div>
+        <div style="flex: 1;">
+            <ul style="list-style: none;text-decoration:none;justify-content:space-around;display:flex;">
+                 <li><a href="/" style="color: white;">Home</a></li>
+                <li><a href="/shop" style="color: white;">Shop</a></li>
+                <li><a href="/contact" style="color: white;">Contact</a></li>
+                <li><a href="/cart" style="color: white;">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <form action="/new_item" method="POST" class="mb-4">
+            <div class="form-group mb-4">
+                <label for="title">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter title">
+            </div>
+            <div class="form-group mb-4">
+                <label for="description">Price</label>
+                <input class="form-control" type="text" name="price" placeholder="Enter price">
+            </div>
+            <div class="form-group mb-4">
+                <label for="description">Manufactured at</label>
+                <input class="form-control" type="date" name="manufacturedAt" placeholder="Enter mnufactured date">
+            </div>
+            <div class="form-group mb-4">
+                <label for="description">Packaging Date</label>
+                <input class="form-control" type="date" name="packagingDate" placeholder="Enter packaging date">
+            </div>
+            <div class="form-group mb-4">
+                <label for="description">Category</label>
+                <input class="form-control" type="text" name="category" placeholder="Enter category">
+            </div>
+            <div class="form-group mb-4">
+                <label for="description">Image</label>
+                <input class="form-control" type="file" name="image" placeholder="Upload image">
+            </div>
+            <input type="submit" value="Post now!" class="btn btn-primary btn-lg btn-block" style="padding-left:auto%;padding-right:auto%;width: 100%;">
+        </form>
+    </div>
+</body>
+</html>
